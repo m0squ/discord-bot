@@ -2,7 +2,7 @@
 
 # make run: runs the executable file created by the function build
 run:
-	./$(out-file)
+	python3 discord_bot.py
 
 # make git-init: makes the directory a git repository
 git-init:

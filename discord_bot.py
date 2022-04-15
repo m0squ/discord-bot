@@ -1,6 +1,7 @@
 ### Imports ###
 import asyncio, discord, json, requests, traceback, youtube_dl
 from discord.ext import commands
+import discord_token
 
 ### Initialize discord ###
 intents = discord.Intents.default()
@@ -90,4 +91,4 @@ async def rickroll_error(ctx, err):
         await ctx.reply("Error: Cannot access the channel specified!")
 
 ### Start the bot ###
-client.run("OTYzNDc3ODAxNzc0NzQzNjEy.YlWqoA.ywztuNgfKAGwrwJtUAjFRtGH0fY")
+client.run(discord_token.token)
