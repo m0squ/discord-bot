@@ -1,6 +1,6 @@
 ### The relative path for all of the commands executed in this makefile is the WORKING DIRECTORY ###
 
-main-file = discord_bot.py
+main-file = discord-bot.py
 
 run:
 	python3 $(main-file)
