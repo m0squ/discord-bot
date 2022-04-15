@@ -23,8 +23,11 @@ git-add:
 # make git-rm file="code.cpp": removes files from the git repository
 git-rm:
 	git rm $(file) --cached
-# make git-commit msg="Commit\ message": updates the git and the GitHub repositories
+# make git-commit msg="Commit\ message": updates the git repository
 git-commit:
 	git add -u
 	git commit -m $(msg)
+
+# make git-push: updates the GitHub repository
+git-push:
 	git push -u origin master
