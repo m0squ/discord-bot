@@ -22,7 +22,7 @@ git-add:
 	git add $(file)
 # make git-rm file="code.cpp": removes files from the git repository
 git-rm:
-	git rm $(file)
+	git rm $(file) --cached
 # make git-commit msg="Commit\ message": updates the git and the GitHub repositories
 git-commit:
 	git add -u
